@@ -45,11 +45,14 @@
 
         .container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .welcome-content {
+            flex: 2;
             max-width: 600px;
             text-align: center;
         }
@@ -61,7 +64,12 @@
         }
 
         .news-column {
-            margin-top: 20px;
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .news-column h3 {
+            margin-top: 0;
         }
 
         .news-item {
@@ -100,7 +108,7 @@
         <a href="skills.html">Skills & Expertise</a>
         <a href="honors.html">Honors & Awards</a>
         <a href="contact.html">Contact</a>
-        <a href="news.html">News</a> <!-- Added News Link -->
+        <a href="news.html">News</a>
     </nav>
 
     <div class="container">
@@ -110,16 +118,19 @@
             <p>
                 Explore my research, projects, and more as I continue to advance the field of chemistry and computational sciences. Stay tuned for updates and news on my latest work and achievements.
             </p>
-            <div class="news-column">
-                <h3>Latest News</h3>
-                <div class="news-item">
-                    <a href="news.html#latest-news-item1"> Computational Chemistry Combined With High-Performance Computing </a>
-                </div>
-                <!-- <div class="news-item">
-                    <a href="news.html#latest-news-item2">Upcoming Conference Presentation on Drug Discovery</a>
-                </div> -->
-                <!-- Add more news items as needed -->
+        </div>
+
+        <div class="news-column">
+            <h3>Latest News</h3>
+            <div class="news-item">
+                <a href="news.html#latest-news-item1">Computational Chemistry Combined With High-Performance Computing</a>
+                <p>Published on: September 1, 2024</p>
             </div>
+            <!-- <div class="news-item">
+                <a href="news.html#latest-news-item2">Upcoming Conference Presentation on Drug Discovery</a>
+                <p>Published on: August 25, 2024</p>
+            </div> -->
+            <!-- Add more news items as needed -->
         </div>
     </div>
 

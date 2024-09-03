@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Edward Ntim Gasu - Chemist & Computational Scientist</title>
+    <title>News - Dr. Edward Ntim Gasu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,52 +43,45 @@
             font-weight: bold;
         }
 
-        .container {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 20px;
+        .news-container {
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .welcome-content {
-            padding: 20px;
-        }
-
-        .welcome-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .news-column {
-            padding: 20px;
-            background-color: #ffffff;
+        .news-item {
+            background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
         }
 
-        .news-column h3 {
+        .news-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .news-item h2 {
             margin-top: 0;
+            font-size: 1.5em;
         }
 
-        .news-item {
-            margin-bottom: 15px;
-        }
-
-        .news-item a {
-            text-decoration: none;
-            color: #004080;
-            font-weight: bold;
+        .news-item p {
+            margin: 5px 0;
         }
 
         footer {
             background-color: #003366;
             color: white;
             text-align: center;
-            padding: 5px;
+            padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -100,10 +93,11 @@
 
     <header>
         <h1>Dr. Edward Ntim Gasu</h1>
-        <p>Chemist Specializing in Experimental and Computational Chemistry</p>
+        <p>News and Updates</p>
     </header>
 
     <nav>
+        <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="research.html">Research & Publications</a>
         <a href="projects.html">Projects</a>
@@ -113,28 +107,32 @@
         <a href="news.html">News</a>
     </nav>
 
-    <div class="container">
-        <div class="welcome-content">
-            <img src="path/to/welcome-image.jpg" alt="Welcome Image">
-            <h2>Welcome to My Professional Page</h2>
-            <p>
-                Explore my research, projects, and more as I continue to advance the field of chemistry and computational sciences. Stay tuned for updates and news on my latest work and achievements.
-            </p>
-        </div>
-
-        <div class="news-column">
-            <h3>Latest News</h3>
-            <div class="news-item">
-                <a href="news.html#news-item1">Transforming Sustainable Development with HPC: Workshop at Stellenbosch University</a>
+    <div class="news-container">
+        <div class="news-item">
+            <img src="Group_Photo_smr3828.jpg" alt="News Item 1">
+            <div>
+                <h2><a href="https://indico.ictp.it/event/10162">Transforming Sustainable Development with HPC: Workshop at Stellenbosch University</a></h2>
                 <p>Published on: September 1, 2024</p>
                 <p>
                     I had an exhilarating opportunity to dive into the world of high-performance computing (HPC) and its groundbreaking role in advancing the United Nations Sustainable Development Goals (SDGs). 
                     At Stellenbosch University, we explored how HPC is revolutionizing efforts towards "Good Health and Well-Being" (SDG 3). The potential of HPC to drive precision medicine and innovative solutions promises to pave the way for significant advancements in global health.
                 </p>
-            </div>
-
-            <!-- Add more news items as needed -->
+            </div>       
         </div>
+
+        <!-- <div class="news-item">
+            <img src="path/to/news-image2.jpg" alt="News Item 2">
+            <div>
+                <h2><a href="#news-item2">Upcoming Conference Presentation on Drug Discovery</a></h2>
+                <p>Published on: August 25, 2024</p>
+                <p>
+                    I will be presenting my latest research at the International Conference on Drug Discovery. The presentation will focus on computational methods and their applications in identifying potential drug candidates.
+                </p>
+            </div>
+        </div> -->
+
+        <!-- Add more news items as needed -->
+
     </div>
 
     <footer>

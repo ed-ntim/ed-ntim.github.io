@@ -44,14 +44,16 @@
         }
 
         .container {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .welcome-content {
-            max-width: 600px;
-            text-align: center;
+            padding: 20px;
         }
 
         .welcome-content img {
@@ -61,11 +63,19 @@
         }
 
         .news-column {
-            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-column h3 {
+            margin-top: 0;
         }
 
         .news-item {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .news-item a {
@@ -78,7 +88,7 @@
             background-color: #003366;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 5px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -100,26 +110,30 @@
         <a href="skills.html">Skills & Expertise</a>
         <a href="honors.html">Honors & Awards</a>
         <a href="contact.html">Contact</a>
-        <a href="news.html">News</a> <!-- Added News Link -->
+        <a href="news.html">News</a>
     </nav>
 
     <div class="container">
         <div class="welcome-content">
-            <img src="welcome.png" alt="Welcome Image">
+            <img src="path/to/welcome-image.jpg" alt="Welcome Image">
             <h2>Welcome to My Professional Page</h2>
             <p>
                 Explore my research, projects, and more as I continue to advance the field of chemistry and computational sciences. Stay tuned for updates and news on my latest work and achievements.
             </p>
-            <div class="news-column">
-                <h3>Latest News</h3>
-                <div class="news-item">
-                    <a href="news.html#latest-news-item1">Exciting New Research Findings in Computational Chemistry</a>
-                </div>
-                <div class="news-item">
-                    <a href="news.html#latest-news-item2">Upcoming Conference Presentation on Drug Discovery</a>
-                </div>
-                <!-- Add more news items as needed -->
+        </div>
+
+        <div class="news-column">
+            <h3>Latest News</h3>
+            <div class="news-item">
+                <a href="news.html#news-item1">Transforming Sustainable Development with HPC: Workshop at Stellenbosch University</a>
+                <p>Published on: September 1, 2024</p>
+                <p>
+                    I had an exhilarating opportunity to dive into the world of high-performance computing (HPC) and its groundbreaking role in advancing the United Nations Sustainable Development Goals (SDGs). 
+                    At Stellenbosch University, we explored how HPC is revolutionizing efforts towards "Good Health and Well-Being" (SDG 3). The potential of HPC to drive precision medicine and innovative solutions promises to pave the way for significant advancements in global health.
+                </p>
             </div>
+
+            <!-- Add more news items as needed -->
         </div>
     </div>
 

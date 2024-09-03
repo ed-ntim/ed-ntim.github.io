@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Edward Ntim Gasu - Chemist & Computational Scientist</title>
+    <title>Sample Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
         header {
@@ -21,16 +21,6 @@
             color: white;
             padding: 20px;
             text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
         }
 
         nav {
@@ -52,30 +42,21 @@
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            flex: 1; /* Ensure container takes available space */
+            flex: 1;
         }
 
         .welcome-content {
             flex: 2;
             max-width: 600px;
-            text-align: center; /* Center align text and image */
+            text-align: center;
         }
 
         .welcome-content img {
-            width: 50%; /* Resize image to 50% of its original size */
+            width: 50%;
             height: auto;
             border-radius: 8px;
-            display: block; /* Ensure image is block-level for centering */
-            margin: 0 auto; /* Center the image horizontally */
-        }
-
-        .welcome-content h2 {
-            margin-top: 20px; /* Space between image and heading */
-        }
-
-        .welcome-content p {
-            font-size: 1.1em;
-            margin-top: 10px;
+            display: block;
+            margin: 0 auto;
         }
 
         .news-column {
@@ -83,53 +64,58 @@
             margin-left: 20px;
         }
 
-        .news-column h3 {
-            margin-top: 0;
-            font-size: 1.5em;
-        }
-
-        .news-item {
-            margin-bottom: 10px;
-        }
-
-        .news-item a {
-            text-decoration: none;
-            color: #004080;
-            font-weight: bold;
-        }
-
         footer {
             background-color: #003366;
             color: white;
             text-align: center;
             padding: 10px;
-            position: relative; /* Changed to relative to avoid overlap */
-            width: 100%;
-            margin-top: auto; /* Push footer to bottom */
+            margin-top: auto;
         }
 
-        /* Optional: Ensure the container has enough bottom padding to not overlap with the footer */
-        .container {
-            padding-bottom: 60px; /* Adjust as needed */
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .welcome-content img {
+                width: 100%;
+            }
+
+            .news-column {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .welcome-content img {
+                width: 50%;
+            }
+
+            .news-column {
+                margin-left: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
-
     <header>
         <h1>Dr. Edward Ntim Gasu</h1>
         <p>Chemist Specializing in Experimental and Computational Chemistry</p>
     </header>
 
     <nav>
+        <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="research.html">Research & Publications</a>
         <a href="projects.html">Projects</a>
         <a href="skills.html">Skills & Expertise</a>
         <a href="honors.html">Honors & Awards</a>
         <a href="contact.html">Contact</a>
-        <a href="news.html">News</a> <!-- Added News Link -->
+        <a href="news.html">News</a>
     </nav>
 
     <div class="container">
@@ -146,9 +132,6 @@
             <div class="news-item">
                 <a href="news.html#latest-news-item1">Computational Chemistry Combined With High-Performance Computing</a>
             </div>
-            <!-- <div class="news-item">
-                <a href="news.html#latest-news-item2">Upcoming Conference Presentation on Drug Discovery</a>
-            </div> -->
             <!-- Add more news items as needed -->
         </div>
     </div>
@@ -156,7 +139,6 @@
     <footer>
         <p>&copy; 2024 Dr. Edward Ntim Gasu | All Rights Reserved</p>
     </footer>
-
 </body>
 
 </html>

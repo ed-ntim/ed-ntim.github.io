@@ -35,7 +35,39 @@
 
         section {
             padding: 20px;
-            text-align: left;
+            text-align: center;
+        }
+
+        .publication-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .publication-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+
+        .publication-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .publication-item a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #003366;
+            background-color: #e6e6e6;
+            border-top: 1px solid #ddd;
         }
 
         footer {
@@ -46,10 +78,6 @@
             position: fixed;
             width: 100%;
             bottom: 0;
-        }
-
-        .publication-item {
-            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -73,19 +101,39 @@
         <p>
             My research interests span a broad range of topics in chemistry and biology, with a particular focus on computational methods in drug discovery. Below are some of my key publications:
         </p>
-        <div class="publication-item">
-            <strong>Molecular insights into the differential membrane targeting of maximin 1 in prokaryotic and eukaryotic cells</strong>,
-            Journal of Biomolecular Structure and Dynamics, 2023.
+        <div class="publication-grid">
+            <div class="publication-item">
+                <img src="graphical_abstract.jpg" alt="Publication 1">
+                <a href="https://www.tandfonline.com/doi/full/10.1080/07391102.2022.2131626">
+                    Computer-aided design of proline-rich antimicrobial peptides based on the chemophysical properties of a peptide isolated from Olivancillaria hiatula
+                </a>
+            </div>
+            <div class="publication-item">
+                <img src="pc3.gif" alt="Publication 2">
+                <a href="https://onlinelibrary.wiley.com/doi/full/10.1155/2020/5324560">
+                    Alkaloids from Cryptolepis sanguinolenta as Potential Inhibitors of SARS‐CoV‐2 Viral Proteins: An In Silico Study
+                </a>
+            </div>
+            <div class="publication-item">
+                <img src="path/to/montanine.jpg" alt="Publication 3">
+                <a href="link-to-article2.html">
+                    The Amaryllidaceae alkaloid, montanine, is a potential inhibitor of the Trypanosoma cruzi trans-sialidase enzyme
+                </a>
+            </div>
+            <div class="publication-item">
+                <img src="path/to/alpha.jpg" alt="Publication 4">
+                <a href="link-to-article3.html">
+                    In silico identification of α-bisabolol and letestuianin C as potential inhibitors of Trypanosoma brucei trypanothione reductase
+                </a>
+            </div>
+            <div class="publication-item">
+                <img src="tbsd_a_2292297_uf0001_c.jpg" alt="Publication 5">
+                <a href="https://www.tandfonline.com/doi/abs/10.1080/07391102.2023.2292297">
+                    Molecular insights into the differential membrane targeting of maximin 1 in prokaryotic and eukaryotic cells
+                </a>
+            </div>
+            <!-- Additional publications can be added similarly -->
         </div>
-        <div class="publication-item">
-            <strong>The Amaryllidaceae alkaloid, montanine, is a potential inhibitor of the Trypanosoma cruzi trans-sialidase enzyme</strong>,
-            Journal of Biomolecular Structure and Dynamics, 2023.
-        </div>
-        <div class="publication-item">
-            <strong>In silico identification of α-bisabolol and letestuianin C as potential inhibitors of Trypanosoma brucei trypanothione reductase</strong>,
-            Journal of Biomolecular Structure and Dynamics, 2023.
-        </div>
-        <!-- Additional publications can be added similarly -->
     </section>
 
     <footer>

@@ -48,7 +48,7 @@
             justify-items: center;
         }
 
-        .publication-item {
+        /* .publication-item {
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -62,6 +62,21 @@
             width: 100%;
             height: auto;
             display: block;
+        } */
+        .publication-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;          /* Ensures uniform size with cropping */
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            padding: 4px;
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .publication-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
         }
 
         .publication-item a {
